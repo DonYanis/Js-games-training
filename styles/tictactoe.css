@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.maingrid{
+    background-color: #141414;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.status{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+}
+
+.grid2{
+    width: 456px;
+    height: 456px;
+    border: solid gray;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto
+}
+.grid2 div{
+    width: 150px;
+    height: 150px;
+    border-width: 1px;
+    border-color: transparent;
+    border-style: solid;
+}
+.player1{
+    background-color: blue;
+    border-radius: 80px;
+}
+.player2{
+    background-color: yellow;
+    border-radius: 80px;
+}
+
+#winner{
+    margin:0;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+}
+
+
+.new_game_btn{
+    padding: 5px 10px;
+    height: 50px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 4px;
+    background: blue;
+    background-size: 100%;
+    background: linear-gradient(90deg, blue 0%,rgb(220, 0, 0) 50%,rgb(252, 176, 69) 100%);
+    cursor: pointer;
+    color: white;
+}
+
+
+@media all and (max-width: 500px) {
+    .grid2{
+        width: 306px;
+        height: 306px;
+    }
+    .grid2 div{
+        width: 100px;
+        height: 100px;
+    }
+
+    .new_game_btn{
+        font-size: 1.5rem;
+    }
+
+    #winner{
+        font-size: 1.5rem;
+    }
+    
+
+}
+
+@media all and (max-width: 340px) {
+.grid2{
+    transform: scale(0.8);
+    margin: 0 0;
+}
+}
+
+@media all and (max-width: 300px) {
+    .grid2{
+        transform: scale(0.7);
+    }
+    }

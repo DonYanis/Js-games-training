@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-y: hidden;
+}
+
+.how_to_play{
+    background-color: #141414;
+    width: 100%;
+    padding-left: 50px;
+}
+
+.how_to_play h1{
+    color: #fff;
+    font-size: 3rem;
+    background: blue;
+    background-size: 100%;
+    background: linear-gradient(90deg, blue 0%,rgb(220, 0, 0) 50%,rgb(252, 176, 69) 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.steps{
+    color: #fff;
+    padding: 10px;
+}
+
+
+.maingrid{
+    background-color: #141414;
+    width: 100%;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+.status{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0px ;;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left:0 0;
+}
+
+.btns button{
+    margin: 20px  50px;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    background: blue;
+    background-size: 100%;
+    background: linear-gradient(90deg, blue 0%,rgb(220, 0, 0) 50%,rgb(252, 176, 69) 100%);
+    cursor: pointer;
+    padding: 5px;
+}
+
+
+.score_status{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    align-items: left;
+    text-align:left;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.score_status p{
+    margin-bottom: 20px;
+}
+
+.backsurface{
+    background-color: #141414;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.right_side{
+    background-color: red;
+    width: 0px;
+    height: 450px;
+    z-index: 999;
+}
+
+.left_side{
+    background-color: red;
+    width: 0px;
+    height: 450px;
+    z-index: 999;
+}
+
+.grid5{
+    width: 500px;
+    height: 450px;
+    border: none;
+    background-color: blue;
+}
+
+
+ .object{
+    width: 30px;
+    height: 20px;
+    background-color: red;
+    margin: 0 0;
+    position:relative;
+    top: 0px;
+    left: 110px;
+    z-index: 2;
+ }
+ .bars{
+     width: 100%;
+     height: 100%;
+     display: flex;
+     position: relative;
+     top: -20px;
+ }
+
+ .pair{
+     width: 50px;
+     margin: 0 50px;
+     display: flex;
+     flex-direction: column;
+     position: relative;
+     transform: translateX(0px);
+     
+ }
+
+ .top_bar{
+    width: 50px;
+    background-color: black;
+    margin: 0 0;
+    position: relative;
+    top: 0px;
+    margin-bottom: 75px;
+    height: 300px;
+
+ }
+
+ .bottom_bar{
+    width: 50px;
+    height: 500px;
+    background-color: black;
+    margin: 0 0;
+    position: relative;
+    bottom: 0px;
+ }
+
+@media screen and (max-width:900px){
+    .maingrid{
+        flex-direction: column;
+    }
+
+    .btns{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .score_status{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+ }
+
+
+@media screen and (max-width:520px){
+
+    .backsurface{
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width:460px){
+
+    .backsurface{
+        transform: scale(0.8);
+    }
+}

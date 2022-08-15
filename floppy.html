@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title>JS Games</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/floppy.css">
+</head>
+<body>
+
+    <div class="how_to_play">
+        <h1>How To Play</h1>
+        <ul>
+            <li class="steps">[SPACE],[UP] or TAP to jump</li>
+            <li class="steps">[ENTER] to start a new game</li>
+            <li class="steps">[P] to Pause game</li>
+        </ul>
+    </div>
+
+
+    <div class="maingrid">
+        <div class="status">
+            <div class="btns">
+                <button class="new_game_btn">New game</button>
+                <button class="pause_game_btn">Pause</button>
+            </div> 
+        </div>
+        <div class="backsurface">
+            <div class="right_side"></div>
+            <div class="grid5">
+                <div class="object" ></div>
+                <div class="bars">
+                    <div class="pair">
+                        <div class="top_bar bar"></div>
+                        <div class="bottom_bar bar"></div>
+                    </div>
+                    <div class="pair">
+                        <div class="top_bar bar"></div>
+                        <div class="bottom_bar bar"></div>
+                    </div>
+                    <div class="pair">
+                        <div class="top_bar bar"></div>
+                        <div class="bottom_bar bar"></div>
+                    </div>
+                    <div class="pair">
+                        <div class="top_bar bar"></div>
+                        <div class="bottom_bar bar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="left_side"></div>
+        </div>
+        <div class="score_status">
+            <p >Score : <span class="score"></span></p>
+            <p >High score : <span class="highscore"></span></p>              
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/floppy.js"></script>
+</body>
+</html>

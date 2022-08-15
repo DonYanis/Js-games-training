@@ -1,0 +1,72 @@
+.game-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-board{
+    width: 500px;
+    height: 500px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    position: relative;
+}
+
+.game-score{
+    font-size: 50px;
+}
+
+.reset-score{
+    font-size: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.cpu-bar,.player-bar{
+    display: block;
+    width: 10px;
+    height: 80px;
+    border-radius: 5px;
+}
+
+.cpu-bar{
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.player-bar{
+    background-color: red;
+    position: absolute;
+    right: 0;
+    top: 420px;
+}
+
+.ball{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.score{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.max-score{
+    font-size: 20px;
+}
+
