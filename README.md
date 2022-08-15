@@ -1,2 +1,2 @@
 # Js-games-training
-Some javascript game with no big CSS
+Some javascript games with no big CSS
